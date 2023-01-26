@@ -10,10 +10,12 @@ CONFIG += c++20
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    nmanager.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    nmanager.h
 
 FORMS += \
     mainwindow.ui

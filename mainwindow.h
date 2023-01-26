@@ -1,7 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <glib.h>
+#include <NetworkManager.h>
 #include <QMainWindow>
+#include <QStringListModel>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +20,7 @@ public:
     ~MainWindow();
 
 private:
+    NMClient* client;
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
